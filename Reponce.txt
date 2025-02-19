@@ -25,14 +25,32 @@ Exercice 14 : existe-t-il une méthode sort() accessible depuis ce type ?
 
 Réponse : non, car la ligne documents.sort(); n'est pas valide.
 
+
 Exercice 16 : Pourquoi cette erreur
 
 Réponse : Pour trier une liste, ses éléments doivent être comparables entre eux.
 Actuellement, la classe Document n'implémente pas encore Comparable<Document>.
 
 
+Exercice 17 : Que faut-il pour qu’une classe “implémente une interface” ?
+
+Réponce : La classe doit utiliser le mot-clé implements suivi du nom de l'interface.
+Elle doit obligatoirement fournir une implémentation de toutes les méthodes déclarées dans l'interface.
 
 
+Exercice 18 : Que fait compareTo(T o) dans Comparable<T> ?
+
+Réponce : Elle compare l'objet courant (this) avec l'objet passé en paramètre (o).
+Elle retourne :
+    0 si les deux objets sont égaux,
+    Un nombre négatif si this est plus petit que o,
+    Un nombre positif si this est plus grand que o.
+
+
+Exercice 20 : Que se passe-t-il en cas de doublons ?
+
+Réponce : Les doublons sont conservés, car compareTo() utilise String.compareTo()
+qui retourne 0 pour des titres identiques, mais ils restent dans la collection.
 
 
 

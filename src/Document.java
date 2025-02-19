@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Document implements Comparable<Document> {
     private String titre;
@@ -16,7 +17,7 @@ public class Document implements Comparable<Document> {
 
     @Override
     public String toString() {
-        return titre;
+        return  titre ;
     }
 
     @Override
@@ -24,6 +25,18 @@ public class Document implements Comparable<Document> {
         return this.titre.compareTo(o.titre);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Document document = (Document) o;
+        return titre.equals(document.titre);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(titre);
+    }
 
 	
 	public static void main(String[] args) {
