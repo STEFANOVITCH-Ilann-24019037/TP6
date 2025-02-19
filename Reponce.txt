@@ -1,0 +1,41 @@
+Exercice 5 : Le type Collection<T> est-il abstrait ou concret ?
+
+Réponse : Collection<T> est une interface abstraite en Java. On ne peut donc pas
+ l'instancier directement. On utilise des classes concrètes qui l'implémentent,
+  comme ArrayList, HashSet, ou LinkedList.
+
+
+Exercice 6 : Le type List<T> est-il abstrait ou concret ?
+
+Réponse : List<T> est aussi une interface abstraite en Java.
+Les implémentations concrètes les plus courantes sont :
+
+	ArrayList
+	LinkedList
+	Vector
+
+
+Exercice 13 : Tout d’abord, en l’état, dans quel ordre les documents sont-il rangés
+ dans la médiathèque ?
+
+Réponse : selon moi, les documents sont ranger par ordre d'ajout dans la Collection.
+
+
+Exercice 14 : existe-t-il une méthode sort() accessible depuis ce type ?
+
+Réponse : non, car la ligne documents.sort(); n'est pas valide.
+
+Exercice 16 : Pourquoi cette erreur
+
+Réponse : Pour trier une liste, ses éléments doivent être comparables entre eux.
+Actuellement, la classe Document n'implémente pas encore Comparable<Document>.
+
+
+
+
+
+
+
+
+
+
