@@ -1,3 +1,4 @@
+
 import java.util.Objects;
 
 public class DocAvecAuteur extends Document {
@@ -58,22 +59,5 @@ public class DocAvecAuteur extends Document {
         return Objects.hash(super.hashCode(), auteur);
     }
 
-    public static void main(String[] args) {
-        Auteur auteur1 = new Auteur("Jean" ,"Stean","EmailDeJean");
-        Auteur auteur2 = new Auteur("Piere" ,"Stean","EmailDePiere");
-
-        System.out.println(auteur1.compareTo(auteur2));
-        System.out.println(auteur1.equals(auteur2));
-        System.out.println(auteur1 +" et sont frére "+auteur2);
-
-        DocAvecAuteur doc1 = new DocAvecAuteur("JeanEtCaVie",auteur1);
-        DocAvecAuteur doc2 = new DocAvecAuteur("JeSuisPlusFortQueJean",auteur2);
-        System.out.println(doc1.compareTo(doc2));
-        System.out.println(doc1.equals(doc2));
-        System.out.println(doc1);
-        System.out.println(doc2);
-
-
-
-    }
+   
 }

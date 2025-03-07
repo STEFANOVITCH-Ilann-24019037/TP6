@@ -1,3 +1,4 @@
+
 import java.util.Objects;
 
 public class Document implements Comparable<Document> {
@@ -38,20 +39,6 @@ public class Document implements Comparable<Document> {
         return Objects.hash(titre);
     }
 
-	
-	public static void main(String[] args) {
-		Document doc1 = new Document("LeChat");
-		Document doc2 = new Document("LeChien");
-		Document doc3 = new Document("simples");
-		Document doc4 = new Document("PasSimples");
-		
-		System.out.println(doc1.getTitre());
-		doc1.setTitre("Voiala");
-		System.out.println(doc1.getTitre());
-		System.out.println(doc2.toString());
-		System.out.println(doc3.toString());
-		System.out.println(doc4.toString());
-	}
 	
 	
 
